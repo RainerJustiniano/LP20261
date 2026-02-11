@@ -31,7 +31,7 @@ def q5():
 #   antecessor e o seu sucessor.
 def q6():
     num = int(input('Digite um numero inteiro: '))
-    print(f)
+    print(f'O antecessor é {num-1} e o sucessor é {num+1}')
 
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
