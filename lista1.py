@@ -35,15 +35,32 @@ def q6():
 
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
+def q7():
+    nome = str(input('Digite seu nome: '))
+    end = str(input('Digite seu endereço: '))
+    cel = input('Digite seu telefone: ')
+    print('nome\tend\tcel')
+    print(f'{nome}\t\t{end}\t\t{cel}')
 
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
+def q8():
+    num1 = int(input('Digite num1: '))
+    num2 = int(input('Digite num2: '))
+    print(f'{num1}-{num2} = {num1-num2}')
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
+def q9():
+    num = float(input('Digite um numero real: '))
+    print(f'1/4 de {num} é {num/4}')
 
 #10. Faça um programa que leia três números reais e calcule a
 #    média aritmética destes números. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q10():
+    num1 = float(input('Digite num1 Real'))
+    num2 = float(input('Digite num2 Real'))
+    num3 = float(input('Digite num3          Real'))
 
 #11. Faça um programa que leia dois números reais e calcule as
 #    quatro operações básicas entre estes dois números, adição,
@@ -59,11 +76,22 @@ def q6():
 
 #14. Faça um programa que leia a base e a altura de um retângulo
 #    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).    
+def q14():
+    base = float(input('Digite a base do retangulo: '))
+    altura = float(input('Digite a altura o retangulo: '))
+    print(f'perimetro = {base*2 + altura*2}')
+    print(f'Area: {base*altura}')
 
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
 #    do produto subtraindo o desconto.
-
+def q15():
+    valor = round(float(input('Valor do produto: ')),2)
+    desconto = float(input('% do desconto desejado: '))
+    valor_desconto = valor*desconto/100
+    print(f'Valor do desconto: R$ {valor_desconto:.2f}')
+    print(f'Valor final do produto: R$ {valor-valor_desconto:.2f}')
+    
 #16. Faça um programa que calcule o reajuste do salário de um
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
