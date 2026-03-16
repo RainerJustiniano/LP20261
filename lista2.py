@@ -3,6 +3,9 @@
 Exercícios sobre os comandos de condição em python
 '''
 
+from util import inputint, inputfloat
+
+
 def exemploSe():
     idade = 18
     if idade == 18:  # Se idade for igual a 18
@@ -70,6 +73,15 @@ def exemploCaso():      # serve apenas para valores conhecidos (poucos) e exatos
 #crescente.
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
+def q11():
+    maior = inputint('Digite um numero:')
+    numero = inputint(' Digite um segundo numero:')
+    if numero > maior:
+        maior = numero
+    numero = inputint('Digite um terceiro numero:')
+    if numero > maior:
+        maior = numero
+    print(f'O maior numero informado é {maior}')
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
 #• Se é maior de idade
